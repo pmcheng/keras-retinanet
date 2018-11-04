@@ -3,6 +3,8 @@
 Keras implementation of RetinaNet object detection as described in [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)
 by Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He and Piotr Dollár.
 
+Please note: This is a version forked from version 0.4.1 and slightly modified by Phillip Cheng for use in the RSNA Pneumonia Detection Challenge.  For the original version, see [here](https://github.com/fizyr/keras-retinanet).
+
 ## Installation
 
 1) Clone this repository.
