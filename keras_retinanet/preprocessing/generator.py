@@ -182,6 +182,14 @@ class Generator(object):
     def preprocess_group_entry(self, image, annotations):
         """ Preprocess image and its annotations.
         """
+
+        if self.transform_generator is not None:
+            image = image.astype(np.float32)
+            delta = random.randint(-30, 30)
+            image+=delta
+            np.clip(image, 0, 255, out=image)
+            image = image.astype(np.uint8)
+
         # preprocess the image
         image = self.preprocess_image(image)
 
