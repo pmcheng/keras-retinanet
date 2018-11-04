@@ -24,7 +24,7 @@ def filter_detections(
     other                 = [],
     class_specific_filter = True,
     nms                   = True,
-    score_threshold       = 0.05,
+    score_threshold       = 0.01,
     max_detections        = 300,
     nms_threshold         = 0.5
 ):
@@ -121,7 +121,7 @@ class FilterDetections(keras.layers.Layer):
         nms                   = True,
         class_specific_filter = True,
         nms_threshold         = 0.5,
-        score_threshold       = 0.05,
+        score_threshold       = 0.01,
         max_detections        = 300,
         parallel_iterations   = 32,
         **kwargs
